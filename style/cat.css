@@ -1,0 +1,60 @@
+.fru-frs-2{
+	width:100%;
+	padding:0 10%;
+	margin:3% 0;
+	position:relative;
+	overflow:hidden;
+}
+
+.fru-frs-2-content-in{
+	overflow: hidden;
+}
+
+#fru-frs-scroll{
+	display:flex;
+	width:100%;
+	gap:1.3rem;
+	transform: translateX(0);
+	transition: 0.8s;
+}
+
+#fru-frs-scroll.fru-frs-scrolled{
+	transform: translateX(-17%);
+}
+
+.fru-col-2{
+	position:relative;
+	align-content:center;
+}
+
+.fru-col-2 h5{
+	position:absolute;
+	bottom:20px;
+	left:60px;
+	background:white;
+	padding:10px 25px;
+}
+
+.fru-col-2 h5 a{
+	text-transform:uppercase;
+	font-size:18px;
+	font-weight:bold;
+}
+
+.catbtn{
+	position:absolute;
+	padding:25px 10px;
+	top:100px;
+	background:none;
+	border:var(--border);
+	border-radius:1px;
+	cursor:pointer;
+}
+
+#catprev{
+	left:90px;
+}
+
+#catnext{
+	right:90px;
+}

@@ -1,0 +1,38 @@
+.pyml{
+    width: 100%;
+    padding: 0 10%;
+    text-align: center;
+}
+
+.pyml .py-in{
+    display: flex;
+    gap: 1.2rem;
+}
+
+.pyml .py-in div{
+    text-align: left;
+    margin: 4% 0;
+}
+
+.pyml .py-in div img{
+    border-radius: 5px;
+}
+
+.pyml .py-in div #post-topic{
+    font-family: 'Sunflower', sans-serif;
+    font-weight: 900;
+    font-size: 1.18rem;
+    margin: 2% 0;
+    width: 100%;
+}
+
+.pyml .py-in div #post-date, .pyml .py-in div #post-desc{
+    color: var(--text-color);
+    font-size: 0.95rem;
+    margin: 2% 0;
+}
+
+.pyml .py-in div #post-date i{
+    font-size: 0.95rem;
+    color: var(--text-color);
+}

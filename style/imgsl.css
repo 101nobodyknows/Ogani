@@ -1,0 +1,148 @@
+.imgslide-con{
+  margin: 5% 0;
+  width: 100%;
+  border-bottom: var(--border);
+}
+
+.imgslide-con .display-area{
+  overflow: hidden;
+}
+
+.imgslide-con .display-area #scroll{
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  scroll-margin-top: 2%;
+  scroll-behavior: smooth;
+  transform: translateX(0);
+  transition: 2s;
+}
+
+.d-products {
+	position:relative;
+  text-align: center;
+}
+
+.d-products #discount{
+  position: absolute;
+  background: #dd2222;
+  color: #fff;
+  border-radius: 50%;
+  top: 15px;
+  left: 15px;
+  padding: 15px 11px;
+  font-size: 0.85rem;
+}
+
+.d-products:hover .feat-btns{
+	display:block;
+}
+
+.d-products .sm-feat{
+  color: var(--text-color);
+  font-size: 0.85rem;
+}
+
+.d-products .feature-price {
+	font-weight:bold;
+	font-family: 'Sunflower', sans-serif;
+	font-size:18px;
+	margin: 7px 0;
+}
+
+.d-products .feature-price span{
+  color: var(--text-color);
+  font-weight: normal;
+  font-size: 0.8rem;
+  text-decoration: line-through;
+  padding: 0 5px;
+}
+
+.d-products .feature-price i {
+	font-weight:bold;
+	font-size:16px;
+}
+
+.feat-btns{
+	position:absolute;
+	bottom:120px;
+	left:20%;
+	display:none;
+	animation:fade 0.3s linear;
+}
+
+.feat-btns i{
+	border:var(--border);
+	font-size: 1rem;
+	margin:0 6px;
+	border-radius: 50px;
+	height: 40px;
+	width: 40px;
+	background: white;
+	padding:11.5px;
+	color:  #000000;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+}
+
+.feat-btns i:hover{
+	background:var(--main-color);
+	color: white;
+	animation:spin 0.2s linear;
+}
+
+@keyframes spin{
+	100%{	
+		transform: rotate(360deg);
+	}
+}
+
+.imgslide-con .disp-a-btns{
+  text-align: center;
+  margin: 3% 0 5% 0;
+}
+
+.imgslide-con .disp-a-btns label{
+  margin: 0 10px;
+}
+
+.imgslide-con .disp-a-btns label i{
+  color: #ccc;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.imgslide-con .disp-a-btns label i:hover{
+  background: #e7e7e7;
+}
+
+#hgg, #hgh, #hgi{
+  display: none;
+}
+
+/* toggle actions for slider */
+#hgg:checked ~ .imgslide-con > div > div{
+  transform: translateX(0);
+}
+
+#hgg:checked ~ .imgslide-con > div.disp-a-btns > label > i.toggle-1{
+  background: #ccc;
+}
+
+#hgh:checked ~ .imgslide-con > div > div{
+  transform: translateX(-50%);
+}
+
+#hgh:checked ~ .imgslide-con > div.disp-a-btns > label > i.toggle-2{
+  background: #ccc;
+}
+
+#hgi:checked ~ .imgslide-con > div > div{
+  transform: translateX(-95%);
+}
+
+#hgi:checked ~ .imgslide-con > div.disp-a-btns > label > i.toggle-3{
+  background: #ccc;
+}

@@ -1,0 +1,239 @@
+.part-1 {
+    width: 100%;
+    padding: 0 15%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 5% 0;
+}
+
+.part-1 div{
+    text-align: center;
+}
+
+.part-1 div i{
+    color: var(--main-color);
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.part-1 div p.c-head{
+	font-weight:bold;
+	font-family: 'Sunflower', sans-serif;
+	font-size:22px;
+    color: black;
+}
+
+.part-1 div p{
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.map{
+    width: 100%;
+    position: relative;
+    margin: 1% 0;
+}
+
+.map iframe{
+    width: 100%;
+    height: 80vh;
+}
+
+.map .map-details{
+    width: 100%;
+    padding: 0 35%;
+    text-align: center;
+    position: absolute;
+    top: 38%;
+}
+
+.map .map-details div{
+    background: whitesmoke;
+    padding: 8%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+.map .map-details div p:nth-child(1){
+    font-weight:bold;
+	font-family: 'Sunflower', sans-serif;
+	font-size:22px;
+    color: black;
+}
+
+.map .map-details div p{
+    color: var(--text-color);
+}
+
+.map .map-details i{
+    color: var(--main-color);
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+.form{
+    width: 100%;
+    text-align: center;
+    padding: 0 10%;
+    margin: 10% 0;
+}
+.form p{
+    font-weight:bold;
+	font-family: 'Sunflower', sans-serif;
+	font-size: 2rem;
+    color: black;
+    margin: 2% 0;
+}
+
+.form form{
+    width: 100%;
+}
+
+.form form div{
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    gap: 0 1.5rem;
+}
+
+.form form div input{
+    width: 50%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: var(--border);
+    color: var(--text-color);
+    outline-style: none;
+    border-radius: 3px;
+}
+
+.form form textarea{
+    width: 100%;
+    font-size: 1rem;
+    border: var(--border);
+    color: var(--text-color);
+    outline-style: none;
+    border-radius: 3px;
+    height: 150px;
+    padding: 0.8rem;
+    margin: 1.5rem 0 0 0;
+}
+
+.form form input[type=submit]{
+    padding:17px 43px;
+	color:white;
+	border:none;
+	background:var(--main-color);
+	font-family: 'Sunflower', sans-serif;
+	font-weight:bold;
+    font-size: 18px;
+    cursor: pointer;
+    height: 53px;
+    border-radius: 1px;
+    margin: 2% 0;
+}
+
+@media only screen and (max-width:991px) {
+    .part-1 {
+        padding: 0 10%;
+        grid-template-columns: auto auto;
+        margin: 6% 0;
+    }
+
+    .map iframe{
+        height: 70vh;
+    }
+
+    .map .map-details{
+        padding: 0 28%;
+        top: 33%;
+    }
+
+    .form{
+        padding: 0 6%;
+    }
+}
+
+@media only screen and (max-width:420px) {
+    .part-1 {
+        grid-template-columns: auto;
+        margin: 10% 0;
+    }
+
+    .part-1 div{
+        margin: 10% 0;
+    }
+    
+    .map{
+        margin: 3% 0;
+    }
+    
+    .map iframe{
+        width: 100%;
+        height: 40vh;
+    }
+    
+    .map .map-details{
+        width: 100%;
+        padding: 0 20%;
+        text-align: center;
+        position: absolute;
+        top: 30%;
+    }
+    
+    .map .map-details div{
+        background: whitesmoke;
+        padding: 8%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-align: center;
+    }
+    
+    .map .map-details div p:nth-child(1){
+        font-size:15px;
+    }
+    
+    .map .map-details div p{
+        font-size: 12px;
+    }
+    
+    .map .map-details i{
+        font-size: 1.5rem;
+        padding: 0.8rem;
+    }
+    
+    .form{
+        width: 100%;
+        text-align: center;
+        padding: 0 2.5%;
+        margin: 10% 0;
+    }
+    .form p{
+        font-size: 1.2rem;
+    }
+    
+    .form form div{
+        display: block;
+    }
+    
+    .form form div input{
+        width: 100%;
+        padding: 0.7rem;
+        font-size: 0.9rem;
+        border-radius: 1.5px;
+        margin: 2% 0;
+    }
+    
+    .form form textarea{
+        font-size: 0.9rem;
+        border-radius: 1.5px;
+        height: 125px;
+        padding: 0.7rem;
+        margin: 2% 0;
+    }
+    
+    .form form input[type=submit]{
+        padding:10px 24px;
+        font-size: 14px;
+        height: 44px;
+        border-radius: 3px;
+    }
+}

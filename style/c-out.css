@@ -1,0 +1,232 @@
+.coupon{
+    width: 100%;
+    padding: 0 10%;
+    margin: 6% 0;
+}
+
+.coupon div{
+    width: 100%;
+    background: #f5f5f5;
+    color: var(--text-color);
+    text-align: center;
+    border-top: 1px solid var(--main-color);
+    padding: 10px 0;
+    font-size: 1rem;
+}
+
+.coupon div i{
+    color: var(--main-color);
+    font-size: 1rem;
+}
+
+.coupon div a{
+    color: var(--text-color);
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+.bill-details{
+    width: 100%;
+    padding: 0 10%;
+}
+
+.bill-details .bill-head{
+	font-weight:bold;
+	font-family: 'Sunflower', sans-serif;
+    font-size: 1.5rem;
+}
+
+.bill-details form{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    border-top: var(--border);
+    padding: 20px 0;
+    margin: 2% 0;
+}
+
+.bill-details form .right-det{
+    width: 65%;
+}
+
+.bill-details form .right-det .name-con{
+    display: flex;
+    width: 100%;
+    gap: 0 40px;
+}
+
+.bill-details form .right-det .name-con div{
+    width: 100%;
+}
+
+.bill-details form .right-det div{
+    margin: 2% 0;
+}
+
+.bill-details form .right-det div label{
+    font-size: 1.05rem;
+}
+
+.bill-details form .right-det div label span{
+    color: #e13a3a;
+}
+
+#name{
+    width: 100%;
+}
+
+.bill-details form input[type=text], .bill-details form input[type=password]{
+    width: 100%;
+    border: 1px solid #efefef;
+    outline-style: none;
+    padding: 11px 13px;
+    border-radius: 4px;
+    color: var(--text-color);
+    margin: 1.5% 0;
+    font-size: 1rem;
+}
+
+.cont {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.cont input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 21px;
+  width: 21px;
+  background-color: #f5f5f5;
+  border-radius: 2px;
+  border: var(--border);
+}
+
+.cont:hover input ~ .checkmark {
+  background-color: #f8f8f8;
+}
+
+.cont input:checked ~ .checkmark {
+  background-color: #7fad39;
+}
+
+.cont input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.cont .checkmark:after {
+  left: 6.5px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.bill-details form .right-det p{
+    color: var(--text-color);
+}
+
+.bill-details form .left-det{
+    width: 32.5%;
+    background: #f5f5f5;
+    padding: 30px;
+    height: fit-content;
+}
+
+.bill-details form .left-det table{
+    padding: 15px 0;
+    border-top: var(--border);
+    margin: 15px 0;
+}
+
+.bill-details form .left-det table, tr, td{
+    width: 100%;
+    justify-content: space-between;
+    text-align: left;
+    padding: 15px 0 0 0;
+}
+
+.bill-details form .left-det table tr th{
+    font-weight:bold;
+	font-family: 'Sunflower', sans-serif;
+    font-size: 1.05rem;
+}
+
+.bill-details form .left-det table tr td{
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.bill-details form .left-det table tr td:nth-child(2){
+    font-family: 'Sunflower', sans-serif;
+    font-weight: bold;
+}
+
+.bill-details form .left-det div{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-top: var(--border);
+}
+
+.bill-details form .left-det div .bld{
+    font-family: 'Sunflower', sans-serif;
+    font-weight: bold;
+    font-size: 1.07rem;
+}
+
+.bill-details form .left-det div .bld.price{
+    font-size: 1.1rem;
+}
+
+.bill-details form .left-det div .bld.price.op{
+    color: #dd2222;
+}
+
+.bill-details form .left-det .erf{
+    display: block;
+}
+
+.bill-details form .left-det .erf label{
+    margin: 10px 0;
+}
+
+.bill-details form .left-det .erf p{
+    width: 90%;
+    color: var(--text-color);
+}
+
+.bill-details form input[type=submit]{
+    width: 100%;
+    background: var(--main-color);
+    border: none;
+    padding: 15px;
+    font-family: 'Sunflower', sans-serif;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+}

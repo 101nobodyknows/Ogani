@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="shortcut icon" href="imgs/SC.png" />
+        <meta name="description" content="Personal Portfolio">
+        <meta name="keywords" content="ayo,html, css, javascript, js, website, graphics, developer, web, IT, engr, engineering, creative">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./style/footer.css" type="text/css">
+		<title>Ogani | Template</title>
+		<link rel="stylesheet" type="text/css" href="./style/style2.css"/>
+		<link rel="stylesheet" type="text/css" href="./style/s-cart.css"/>
+		<link rel="stylesheet" type="text/css" href="./style/font/css/all.css"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@700&family=Titillium+Web&display=swap" rel="stylesheet">
+		<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	</head>
+	<body>
+		<div class="header1">
+			<div class="top-head">
+				<div class="top-head-in left">
+					<p><i class="fa fa-envelope"></i>&nbsp; abiolaayokunnu101@gmail.com</p>
+					<p class="side-bor"> Free Shipping for all Order of 10,000</p>
+				</div>
+				<div class="top-head-in right">
+					<p class="top-icons">
+						<i class="fa-brands fa-facebook"></i>
+						<i class="fa-brands fa-twitter"></i>
+						<i class="fa-brands fa-linkedin"></i>
+						<i class="fa-brands fa-pinterest"></i>
+					</p>
+					<div class="side-bor down">
+						<div><p><img src="./img/language.png"/></p><p>English &nbsp; <i class="fa fa-chevron-down"></i></p></div>
+						<ul class="drop-content">
+							<li>Spanish</li>
+							<li>English</li>
+						</ul>
+					</div>
+					<p class="side-bor login"> <i class="fa fa-user"></i>&nbsp;Login</p>
+				</div>
+			</div>
+			<div class="top-nav">
+				<div class="logo">
+					<a href=""><img src="./img/logo.png"/></a>
+				</div>
+				<ul class="top-links">
+					<li><a href="index.html" title="Home">HOME</a></li>
+					<li><a class="l-active" href="shop.html" title="Shop">SHOP</a></li>
+					<li class="drop-link">PAGES
+						<ul class="nav-drop">
+							<li><a href="shopdetails.html" title="Shop Details">Shop Details</a></li>
+							<li><a href="" title="Shopping cart">Shopping cart</a></li>
+							<li><a href="checkout.html" title="Check Out">Check Out</a></li>
+							<li><a href="blogdetails.html" title="Blog Details">Blog Details</a></li>
+						</ul>
+					</li>
+					<li><a href="blog.html" title="Blog">BLOG</a></li>
+					<li><a href="contact.html" title="Contact">CONTACT</a></li>
+				</ul>
+				<div class="right-nav">
+					<p><i class="fa fa-heart"></i><span class="bor">1</span></p>
+					<p><i class="fa-solid fa-suitcase"></i><span class="bor">3</span></p>
+					<p class="top-price">item:<span><i class="fa-solid fa-naira-sign"></i>11,000.00</span></p>
+				</div>
+				<button id="open-menu"><i class="fa fa-bars"></i></button>
+			</div>
+		</div>
+		<div class="first">
+			<div class="categ">
+				<button class="button-1"><i class="fa fa-bars"></i>&nbsp; All departments &nbsp; <i class="fa fa-chevron-down"></i></button>
+				<ul class="categs">
+					<li><a href="#">Fresh Meat</a></li>
+					<li><a href="#">Vegetables</a></li>
+					<li><a href="#">Fresh Onion</a></li>
+					<li><a href="#">Fruit & Nut Gifts</a></li>
+					<li><a href="#">Fresh Berries</a></li>
+					<li><a href="#">Papaya & Crisps</a></li>
+					<li><a href="#">Ocean Foods</a></li>
+					<li><a href="#">Butter & Eggs</a></li>
+					<li><a href="#">Fastfood</a></li>
+					<li><a href="#">Oatmeal</a></li>
+					<li><a href="#">Fresh Bananas</a></li>
+				</ul>
+			</div>
+			<div class="all-cat">
+				<p class="all-cat-head">All Categories &nbsp; <i class="fa fa-chevron-down"></i></p>
+				<input type="text" id="search" placeholder="What do you need?"/>
+				<button class="button-2">SEARCH</button>
+			</div>
+			<div class="f-con">
+				<p><i class="fa-solid fa-phone"></i></p>
+				<div class="f-con-details">
+					<p>+234-704-458-4688</p>
+					<p id="f-con-det2">support 24/7 time</p>
+				</div>
+			</div>
+		</div>
+		<section class="hero-banner">
+			<img src="./img/breadcrumb.jpg"/>
+			<h1>Shopping Cart</h1>
+			<p class="hero-next"><a href="index.html">Home-</a><span>Shopping Cart</span></p>
+		</section>
+		<section class="part-1">
+			<table>
+				<tr>
+					<th>Products</th>
+					<th>Price</th>
+					<th>Quantity</th>
+					<th>Total</th>
+					<th id="nun">&times;</th>
+				</tr>
+				<tr>
+					<td class="c-name"><img src="./img/cart/cart-1.jpg"/><p>Vegetable's Package</p></td>
+					<td class="bld"><i class="fa-solid fa-naira-sign"></i>5,500.00</td>
+					<td>
+						<form>
+							<div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+							<input type="number" id="number" value="1" />
+							<div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+						</form>
+					</td>
+					<td class="bld"><i class="fa-solid fa-naira-sign"></i>5,500.00</td>
+					<td>&times;</td>
+				</tr>
+				<tr>
+					<td class="c-name"><img src="./img/cart/cart-2.jpg"/><p>Vegetarians Pack</p></td>
+					<td class="bld"><i class="fa-solid fa-naira-sign"></i>5,500.00</td>
+					<td>
+						<form>
+							<div class="value-button" id="decrease2" onclick="decreaseValue()" value="Decrease Value">-</div>
+							<input type="number" id="number2" value="1" />
+							<div class="value-button" id="increase2" onclick="increaseValue()" value="Increase Value">+</div>
+						</form>
+					</td>
+					<td class="bld"><i class="fa-solid fa-naira-sign"></i>5,500.00</td>
+					<td>&times;</td>
+				</tr>
+				<tr>
+					<td class="c-name"><img src="./img/cart/cart-3.jpg"/><p>Bananas</p></td>
+					<td class="bld"><i class="fa-solid fa-naira-sign"></i>500.00</td>
+					<td>
+						<form>
+							<div class="value-button" id="decrease3" onclick="decreaseValue()" value="Decrease Value">-</div>
+							<input type="number" id="number3" value="2" />
+							<div class="value-button" id="increase3" onclick="increaseValue()" value="Increase Value">+</div>
+						</form>
+					</td>
+					<td class="bld"><i class="fa-solid fa-naira-sign"></i>1,000.00</td>
+					<td>&times;</td>
+				</tr>
+			</table>
+			<div class="cart-btns">
+				<button>CONTINUE SHOPPING</button>
+				<button><i class='bx bx-loader-circle'></i>&nbsp;UPDATE CART</button>
+			</div>
+			<div class="cart-pay">
+				<div>
+					<p>Discount Codes</p>
+					<div class="coupon-details">
+						<input type="text" placeholder="Enter your coupon code"/>
+						<button>APPLY COUPON</button>
+					</div>
+				</div>
+				<div class="cart-pay-2">
+					<p>Cart Total</p>
+					<div class="ub">
+						<p>Subtotal</p>
+						<p><i class="fa-solid fa-naira-sign" style="color:#dd2222;"></i>12,000.00</p>
+					</div>
+					<div>
+						<p>Total</p>
+						<p><i class="fa-solid fa-naira-sign" style="color:#dd2222;"></i>12,000.00</p>
+					</div>
+					<button>PROCEED TO CHECKOUT</button>
+				</div>
+			</div>
+		</section>
+		<!-- FOOTER -->
+		<footer>
+			<div class="footer">
+				<div class="footer-in flex">
+					<div class="footer-in-2">
+						<div><img src="./img/logo.png" alt="Logo"></div>
+						<p>Address: 27, Amobi, Megida, Ayobo, Ipaja, Lagos.</p>
+						<p>Phone: +234-704-458-4688</p>
+						<p>Email: abiolaayokunnu101@gmail.com</p>
+					</div>
+					<div class="footer-in-2">
+						<p class="foot-head">Useful Links</p>
+						<div>
+							<ul>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">About Our Shop</a></li>
+								<li><a href="#">Secure Shopping</a></li>
+								<li><a href="#">Delivery Information</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+								<li><a href="#">Our Sitemap</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Who We Are</a></li>
+								<li><a href="#">Our Services</a></li>
+								<li><a href="#">Projects</a></li>
+								<li><a href="#">Contact</a></li>
+								<li><a href="#">Innovation</a></li>
+								<li><a href="#">Testimonials</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer-in no-flex">
+					<p class="foot-head">Join Our Newsletter Now</p>
+					<p>Get E-mail updates about our latest shop and special offers.</p>
+					<div class="mail-sub">
+						<input type="email" name="Email" id="email" placeholder="Enter your E-mail" autocomplete="email"/>
+						<button id="subEmail">SUBSCRIBE</button>
+					</div>
+					<div class="socialBtns">
+						<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+						<a href="#"><i class="fa-brands fa-instagram"></i></a>
+						<a href="#"><i class="fa-brands fa-twitter"></i></a>
+						<a href="#"><i class="fa-brands fa-pinterest"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">
+				<p>Copyright ©2024 All rights reserved | This template is made with <i class="fa fa-heart"></i> by <a target="_blank" href="https://colorlib.com/">Colorlib</a> and recreated by <a target="_blank" href="http://ayokunnuabiola.liveblog365.com/?i=1">Graphix Prime</a></p>
+				<img src="./img/payment-item.png" alt="Payment">
+			</div>
+		</footer>
+		<!-- END FOOTER -->
+		<script src="./javascript/data1.js"></script>
+		<script src="./javascript/s-cart.js"></script>
+	</body>
+</html>

@@ -1,0 +1,171 @@
+.part1{
+    width: 100%;
+    padding: 3% 8%;
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+    border-bottom: var(--border);
+}
+
+.part1 .right-part{
+    width: 28%;
+    margin: 5% 0;
+}
+
+.part1 .right-part .search{
+    width: 100%;
+    height: 3rem;
+    border: var(--border);
+    border-radius: 20px;
+}
+
+.part1 .right-part .search input[type=text]{
+    width: 90%;
+    height: 2.5rem;
+    border: none;
+    outline-style: none;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 1rem;
+    color: var(--text-color);
+    margin: 2px 0 0 2px;
+}
+
+.part1 .right-part .search i{
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.part1 .right-part .categ-02{
+    margin: 50px 0;
+}
+
+.part1 .right-part .b-head{
+	font-family: 'Sunflower', sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.part1 .right-part .categ-02 ul li{
+    margin: 15px 0;
+    font-size: 1rem;
+}
+
+.part1 .right-part .categ-02 ul li a{
+    color: var(--text-color);
+}
+
+.part1 .right-part .recents{
+    margin: 50px 0;
+}
+
+.part1 .right-part .recents div a{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 20px 0;
+    gap: 20px;
+}
+
+.part1 .right-part .recents div a img{
+    border-radius: 5px;
+}
+
+.part1 .right-part .recents div a div p:nth-child(1){
+    font-family: 'Sunflower', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.part1 .right-part .recents div a div p:nth-child(2){
+    color: var(--text-color);
+    font-size: 0.75rem;
+}
+
+.part1 .right-part .s-by{
+    margin: 50px 0;
+    width: 100%;
+}
+
+.part1 .right-part .s-by div{
+    margin: 20px 0;
+}
+
+.part1 .right-part .s-by div a{
+    background: #f5f5f5;
+    color: var(--text-color);
+    padding: 5px 15px;
+    font-size: 1rem;
+    margin: 0 7px 0 0;
+}
+
+.part1 .left-part{
+    width: 60%;
+}
+
+.part1 .left-part .r-gr{
+    width: fit-content;
+}
+
+.part1 .left-part .r-gr p{
+    color: var(--text-color);
+    font-size: 1.11rem;
+    margin: 2.5% 0;
+}
+
+.part1 .left-part .r-gr .gr-topic{
+    color: black;
+    font-size: 1.8rem;
+    font-family: 'Sunflower', sans-serif;
+    font-weight: 900;
+    line-height: 28px;
+}
+
+.part1 .left-part .r-gr .gr-details{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.part1 .left-part .r-gr .gr-details .gr-author{
+    display: flex;
+    align-items: center;
+    margin: 3% 0;
+}
+
+.part1 .left-part .r-gr .gr-details .gr-author img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.part1 .left-part .r-gr .gr-details .gr-author div{
+    margin: 0 10px;
+}
+
+.part1 .left-part .r-gr .gr-details div .author{
+    color: black;
+    font-family: 'Sunflower', sans-serif;
+    font-weight: 900;
+    font-size: 1.05rem;
+    margin: 0;
+}
+
+.part1 .left-part .r-gr .gr-details div .author span{
+    color: var(--text-color);
+    font-weight: none;
+    font-size:0.9rem;
+}
+
+.part1 .left-part .r-gr .gr-details  p{
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.part1 .left-part .r-gr .gr-details div p a i{
+    color: var(--text-color);
+    font-size: 1.5rem;
+    padding: 4%;
+}
+

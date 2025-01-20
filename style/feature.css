@@ -1,0 +1,172 @@
+.featured{
+	width:100%;
+	padding:0 9%;
+	text-align:center;
+	margin: 5% 0;
+}
+
+.featured-content label {
+	font-size:18px;
+	margin:0 1.7%;
+	cursor:pointer;
+}
+
+.featured-prod{
+	display:grid;
+	grid-template-columns:auto auto auto auto;
+	gap:20px 15px;
+	margin-top:4%;
+}
+	
+.f-products {
+	position:relative;
+}
+
+.f-products:hover .feat-btns{
+	display:block;
+}
+
+.f-products p.feature-price {
+	font-weight:bold;
+	font-family: 'Sunflower', sans-serif;
+	font-size:18px;
+	margin: 7px 0;
+}
+
+.f-products p.feature-price i {
+	font-weight:bold;
+	font-size:16px;
+}
+
+.feat-btns{
+	position:absolute;
+	bottom:90px;
+	left:24%;
+	display:none;
+	animation:fade 0.3s linear;
+}
+
+.feat-btns i{
+	border:var(--border);
+	font-size: 1rem;
+	margin:0 6px;
+	border-radius: 50px;
+	height: 40px;
+	width: 40px;
+	background: white;
+	padding:11.5px;
+	color:  #000000;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+}
+
+.feat-btns i:hover{
+	background:var(--main-color);
+	color: white;
+	animation:spin 0.2s linear;
+}
+
+@keyframes spin{
+	100%{	
+		transform: rotate(360deg);
+	}
+}
+
+/* hide the radio buttons */
+#f-toggle-1, #f-toggle-2, #f-toggle-3, #f-toggle-4, #f-toggle-5 {
+	display:none;
+}
+
+/* active state of the buttons */
+#f-toggle-1:checked ~ .featured-content #all-feature {
+	border-bottom:2px var(--main-color) solid;
+}
+#f-toggle-2:checked ~ .featured-content #orange-feature {
+	border-bottom:2px var(--main-color) solid;
+}
+#f-toggle-3:checked ~ .featured-content #fmeat-feature {
+	border-bottom:2px var(--main-color) solid;
+}
+#f-toggle-4:checked ~ .featured-content #vege-feature {
+	border-bottom:2px var(--main-color) solid;
+}
+#f-toggle-5:checked ~ .featured-content #ffood-feature {
+	border-bottom:2px var(--main-color) solid;
+}
+
+/* display for the grid */
+/* all to show */
+#f-toggle-1:checked ~ .featured-content .featured-prod .f-products{
+	display:block;
+	animation:fade 0.3s linear;
+}
+
+/* f-toggle-2(orange) */
+#f-toggle-2:checked ~ .featured-content .featured-prod #feature-1, 
+#f-toggle-2:checked ~ .featured-content .featured-prod #feature-4, 
+#f-toggle-2:checked ~ .featured-content .featured-prod #feature-6 {
+	animation:fade 0.3s linear;
+	display:block;
+}
+#f-toggle-2:checked ~ .featured-content .featured-prod #feature-2, 
+#f-toggle-2:checked ~ .featured-content .featured-prod #feature-3, 
+#f-toggle-2:checked ~ .featured-content .featured-prod #feature-5, 
+#f-toggle-2:checked ~ .featured-content .featured-prod #feature-7, 
+#f-toggle-2:checked ~ .featured-content .featured-prod #feature-8 {
+	display:none;
+}
+
+/* f-toggle-3(f-meat) */
+#f-toggle-3:checked ~ .featured-content .featured-prod #feature-1, 
+#f-toggle-3:checked ~ .featured-content .featured-prod #feature-3, 
+#f-toggle-3:checked ~ .featured-content .featured-prod #feature-5, 
+#f-toggle-3:checked ~ .featured-content .featured-prod #feature-7 {
+	display:block;
+	animation:fade 0.3s linear;
+}
+#f-toggle-3:checked ~ .featured-content .featured-prod #feature-2, 
+#f-toggle-3:checked ~ .featured-content .featured-prod #feature-4, 
+#f-toggle-3:checked ~ .featured-content .featured-prod #feature-6, 
+#f-toggle-3:checked ~ .featured-content .featured-prod #feature-8 {
+	display:none;
+}
+
+/* f-toggle-4(vege) */
+#f-toggle-4:checked ~ .featured-content .featured-prod #feature-2, 
+#f-toggle-4:checked ~ .featured-content .featured-prod #feature-3, 
+#f-toggle-4:checked ~ .featured-content .featured-prod #feature-5, 
+#f-toggle-4:checked ~ .featured-content .featured-prod #feature-7, 
+#f-toggle-4:checked ~ .featured-content .featured-prod #feature-8 {
+	display:block;
+	animation:fade 0.3s linear;
+}
+#f-toggle-4:checked ~ .featured-content .featured-prod #feature-1, 
+#f-toggle-4:checked ~ .featured-content .featured-prod #feature-4, 
+#f-toggle-4:checked ~ .featured-content .featured-prod #feature-6 {
+	display:none;
+}
+
+/* f-toggle-5(f-food) */
+#f-toggle-5:checked ~ .featured-content .featured-prod #feature-2, 
+#f-toggle-5:checked ~ .featured-content .featured-prod #feature-4, 
+#f-toggle-5:checked ~ .featured-content .featured-prod #feature-6, 
+#f-toggle-5:checked ~ .featured-content .featured-prod #feature-8  {
+	display:block;
+	animation:fade 0.3s linear;
+}
+
+#f-toggle-5:checked ~ .featured-content .featured-prod #feature-1, 
+#f-toggle-5:checked ~ .featured-content .featured-prod #feature-3, 
+#f-toggle-5:checked ~ .featured-content .featured-prod #feature-5, 
+#f-toggle-5:checked ~ .featured-content .featured-prod #feature-7 {
+	display:none;
+}
+
+.f-prod-2{
+	display:grid;
+	grid-template-columns:auto auto;
+	gap:30px;
+	margin:5% 0;
+}
